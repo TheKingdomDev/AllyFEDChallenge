@@ -1,13 +1,27 @@
 
-
+/*================Global=============*/
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*================Layout=============*/
 .wrapper {
     width: 85%;
     margin: 0 auto;
+    display: flex;
+    min-height: 100%
+    margin-bottom: -85px;
 }
+
+.main-container {
+    margin-right: 10%;
+}
+
+.side-container {
+}
+
+/*================Navbar=============*/
+
 
 .main-nav {
     background-color: #2096c1;
@@ -20,6 +34,8 @@ body {
 #li-brand {
     float: left;
     padding: 8px;
+    margin-left: 95px;
+    list-style: none;
 }
 .li-link {
     list-style: none;
@@ -33,11 +49,20 @@ body {
     text-decoration: none;
     color: white;
 }
+
+.li-last a {
+    margin-right: 92px;
+}
+
+/*================Header=============*/
+
 #main-header {
     color: #5e136d;
     font-size: 32px;
     font-family: Helvetica;
 }
+
+/*================List Area=============*/
 
 #list-heading {
     font-size: 24px;
@@ -45,32 +70,172 @@ body {
     color: #000;
 }
 
+#list-heading {
+    margin-bottom: -5px;
+}
+
+#awesomeList {
+    margin-left: -20px;
+
+}
+
+#awesomeList li {
+    padding: 5px 5px 5px;
+}
+
+/*================Mobile Card=============*/
 .mobile-div {
     background-color: #93c9a1;
+
 }
 
 #mobile-heading {
     color: #5e136d;
     font-weight: bold;
-    padding: 15px;
-}
-
-#list-div {
+    padding-top: 8px;
+    padding-left: 8px;
 
 }
 
-#list-heading {
+#mobile-text {
+    padding: 8px;
+    width: 90%;
+}
+
+#iphone {
+    float: right;
+    margin-top: -205px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+/*================Login Button=============*/
+.login-button {
+    width: 100%;
+    height: 50px;
+    background-color: #5e136d;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #5e136d;
+    margin-top: 16px;
+    margin-bottom: 25px;
+}
+
+/*================Tabbed Sidebar=============*/
+
+#news {
+    background-color: gray;
+    margin-top: -22px;
+    padding: 10px 15px;
+}
+.news-tab-on {
+    background-color: gray;
+    height: 60px;
+    width: 88px;
+    border: 1px solid gray;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+}
+.news-tab-off {
 
 }
 
-#awesomeList {
+.arch-tab-on {
+    
+}
+.arch-tab-off {
+   background-color: lightgray;
+   height: 55px;
+   width: 80px;
+   border-left: 3px solid black;
+   border-top: 3px solid black;
+   border-right: 3px solid black;
+   margin-left: -6px;
+   margin-bottom: -15px;
 
 }
+#archiveList {
+    display: none;
+}
+
+/*================Table=============*/
+.table-header-one {
+    display: inline-block;
+    border-right: 1px solid #000;
+    padding-right: 10px;
+}
+.table-header-two {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+
+/*================Modal=============*/
+.modal {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 250px;
+    width: 400px;
+    background-color: gray;
+}
+
+#modal-header {
+    padding: 20px;
+}
+
+.text-input{
+    border: 2px solid #2096c1;
+    margin: 10px;
+    margin-bottom: 25px;
+}
+#login label {
+    padding-left: 20px;
+
+}
+#close-modal {
+    background-color: #fff;
+    float: right;
+}
+#log {
+    background-color: #5e136d;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #5e136d; 
+    margin-left: 215px;
+}
+/*================Footer=============*/
 
 .main-footer {
     background-color: #c2c6c3;
+    height: 85px;
+    margin-bottom: 0;
+    margin-top: 25px;
 }
 .main-footer a {
     display: inline;
     text-decoration: none;
+    color: blue;
+    float: right;
+    padding-right: 30px;
+    padding-top: 10px;
 }
+
+#copy {
+    float: left;
+    padding-left: 95px;
+}
+#push-in {
+    padding-right: 90px;
+}
+
+
+/*================Clearfix if needed=============*/
+.clearfix {
+    overflow: auto;
+}
+
+/*================Media Queries=============*/
