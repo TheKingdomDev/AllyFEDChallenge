@@ -12,6 +12,7 @@
   crossorigin="anonymous"></script>
 <!--Styles-->
   <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
     
@@ -61,16 +62,14 @@
         </div>
         <!--Table - TableHeader-->
         <div>
-            <h2 class="table-header-one">Rates</h2>
-            <h2 class="table-header-two">Check Them Out.</h2>
-            <table id="table-data">
-                <tr>
-                    <th></th>
-                    <th>Annual Percentage Yield</th>
-                    <th>Est. Earnings for 1 Year*</th>
-                </tr>
-                
-            </table>
+            <h2 class="table-header-one clearfix">Rates</h2>
+            <h2 class="table-header-two clearfix">Check Them Out.</h2>
+            <br>
+            <h6 class="table-caption-two">Est. Earnings for 1 Year*</h6>
+            <h6 class="table-caption-one">Annual Percentage Yield</h6>
+            
+            <table id="table-data"></table>
+            <h6 class="table-caption-three">*Based on $50,000 deposit</h6>
         </div>
 
         </div> <!-- end of main container -->
@@ -79,8 +78,8 @@
                 <button class="login-button" type="">Login</button>
                 <!--SidebarTabs-->
                 <div class="tab">
-                    <button class="tablink news-tab-on news-tab-off" onclick="openTab(event, 'news')">News</button>
-                    <button class="tablink arch-tab-off arch-tab-on" onclick="openTab(event, 'archiveList')">Archive</button>
+                    <button id = "news-button" class="tablink news-tab-on news-tab-off">News</button>
+                    <button id = "arch-button" class="tablink arch-tab-off arch-tab-on">Archive</button>
                 </div>
 
                 <div id="news" class="newsContent">
@@ -93,7 +92,7 @@
                 </div>
 
                 <div id="archiveList">
-                    <ul>
+                    <ul id="arch-links">
                         <li><a href="#">Lorem Ipsum Dolor</a></li>
                         <li><a href="#">Lorem Ipsum Dolor</a></li>
                         <li><a href="#">Lorem Ipsum Dolor</a></li>
