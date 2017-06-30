@@ -18,7 +18,7 @@ body {
 }
 
 .side-container {
-    width: 80%;
+    width: 90%;
 }
 
 /*================Navbar=============*/
@@ -125,21 +125,22 @@ body {
 /*================Tabbed Sidebar=============*/
 
 #news {
-    background-color: gray;
+    background-color: #d4d6d4;
     margin-top: -22px;
     padding: 10px 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #news h3 a {
     text-decoration: none;
     color: blue;
 }
 .news-tab-on {
-    background-color: gray;
+    background-color: #d4d6d4;
     height: 60px;
     width: 88px;
     border: 1px solid gray;
-    border-top: 3px solid black;
-    border-right: 3px solid black;
+    border-top: 3px solid lightgray;
+    border-right: 3px solid lightgray;
 }
 .news-tab-off {
 
@@ -149,20 +150,20 @@ body {
     
 }
 .arch-tab-off {
-   background-color: lightgray;
+   background-color: #d4d6d4;
    height: 55px;
    width: 80px;
-   border-left: 3px solid black;
-   border-top: 3px solid black;
-   border-right: 3px solid black;
+   border-left: 3px solid lightgray;
+   border-top: 3px solid lightgray;
+   border-right: 3px solid lightgray;
    margin-left: -6px;
    margin-bottom: -15px;
 
 }
 #archiveList {
     display: none;
-    background-color: gray;
-    margin-top: -22px;
+    background-color: #d4d6d4;
+    margin-top: -20px;
     padding: 10px 15px;
 }
 #arch-links {
@@ -175,6 +176,7 @@ body {
 }
 
 /*================Table=============*/
+    /*I acknowledge that this sections isn't very dry...*/
 
 table {
     border-spacing: 0;
@@ -241,6 +243,7 @@ table {
     text-align: right;
     padding-right: 10px;
 }
+/*No idea why only one of these worked*/
 /*#table-data tr:nth-child(even) {
     background-color: #98b59f;
 }
@@ -317,3 +320,19 @@ table {
 }
 
 /*================Media Queries=============*/
+
+/*Not completely responsive on the navbar, iphone image, and footer. I am happy with the layout being responsive.*/
+
+@media screen and (max-width: 768px) {
+    /*Navbar Responsive*/
+
+    .li-link{
+        display: block;
+    }
+
+    /*Layout*/
+    .wrapper {
+        display: block;
+    }
+
+}

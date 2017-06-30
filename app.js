@@ -1,3 +1,5 @@
+//imported json data
+
 var data = [
   {
     "name": "URBank",
@@ -37,10 +39,10 @@ $(document).ready(function() {
 		$("#close-modal").on("click", function() {
 			$(".modal").hide();
 		})
-	//function to populate a table to input json data 
-	//I know that you can't grab json data locally, browsers will block a request. Since this is a front-end challenge
-	//we must have to just use the data from the file, I can't do a $.getJSON without the data being on a server.
-	console.log(data); 
+	//populate a table with json data 
+	//I couldn't figure out how to grab json data locally, browsers will block a request. Since this is a front-end challenge
+	//I just used the array here in my javascript file, I can't do a $.getJSON without the data being on a server.
+	// console.log(data); 
 	var tableBody = "<tbody>";
 	for(var i = 0; i < data.length; i ++) {
 		tableBody += "<tr>";
@@ -56,13 +58,13 @@ $(document).ready(function() {
 
 	//News button to show the news content in sidebar
 		$("#news-button").on("click", function() {
-			console.log("clicked news");
+			// console.log("clicked news");
 			$("#news").show();
 			$("#archiveList").hide();
 		});
 	//Archive button to show list of links in sidebar
 		$("#arch-button").on("click", function() {
-			console.log("clicked arch");
+			// console.log("clicked arch");
 			$("#archiveList").show();
 			$("#news").hide();
 		});
